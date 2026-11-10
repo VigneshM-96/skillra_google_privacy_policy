@@ -1,0 +1,409 @@
+
+/* =========================================
+   SKILLRA AI - PRIVACY POLICY WEBSITE
+   Brand: #6D0FD7
+   Font: Plus Jakarta Sans
+========================================= */
+
+:root {
+  --purple: #6D0FD7;
+  --purple-dark: #5207AA;
+  --ink: #171322;
+  --muted: #6D6878;
+  --line: #ECE8F2;
+  --surface: #FFFFFF;
+  --page: #F8F7FB;
+  --soft-purple: #F4EDFF;
+}
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 28px;
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--purple);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--purple-dark);
+  text-decoration: underline;
+}
+
+/* HEADER */
+
+.site-header {
+  height: 76px;
+  padding: 0 max(24px, calc((100% - 1180px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  color: white;
+  background: var(--purple);
+  font-size: 19px;
+}
+
+.brand-ai {
+  color: var(--purple);
+}
+
+.header-label {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* MAIN CONTAINER */
+
+.page-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 58px 24px 80px;
+}
+
+/* HERO SECTION */
+
+.hero {
+  max-width: 760px;
+  margin: 0 auto 34px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--purple);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.eyebrow-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--purple);
+}
+
+h1 {
+  margin: 13px 0 10px;
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.15;
+  letter-spacing: -2.3px;
+}
+
+.hero-copy {
+  max-width: 680px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.meta-row strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.meta-divider {
+  height: 14px;
+  width: 1px;
+  background: #D8D2E1;
+}
+
+/* CONTENT LAYOUT */
+
+.content-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+/* SIDE NAVIGATION */
+
+.side-card,
+.policy-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  box-shadow: 0 8px 30px rgba(38, 18, 68, 0.035);
+}
+
+.side-card {
+  position: sticky;
+  top: 20px;
+  padding: 20px 15px;
+}
+
+.side-title {
+  margin: 0 10px 12px;
+  color: #9A93A5;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.side-card nav {
+  display: grid;
+  gap: 3px;
+}
+
+.side-card nav a {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: #625C6D;
+  font-size: 11px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.side-card nav a:hover,
+.side-card nav a.active {
+  background: var(--soft-purple);
+  color: var(--purple);
+  text-decoration: none;
+}
+
+/* POLICY CONTENT */
+
+.policy-card {
+  padding: clamp(24px, 5vw, 54px);
+}
+
+.notice {
+  margin-bottom: 34px;
+  padding: 15px 17px;
+  border: 1px solid #EADcff;
+  border-left: 3px solid var(--purple);
+  border-radius: 9px;
+  background: #FBF8FF;
+  color: #5C4D6F;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.notice strong {
+  color: var(--purple-dark);
+}
+
+/* POLICY SECTIONS */
+
+.policy-card section {
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.policy-card section:last-of-type {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0 0 13px;
+  font-size: 19px;
+  line-height: 1.4;
+  letter-spacing: -0.45px;
+}
+
+h3 {
+  margin: 20px 0 8px;
+  font-size: 14px;
+}
+
+p {
+  margin: 0 0 13px;
+  color: #5F5968;
+  font-size: 12.5px;
+}
+
+ul {
+  margin: 8px 0 15px;
+  padding-left: 21px;
+  color: #5F5968;
+}
+
+li {
+  margin: 7px 0;
+  padding-left: 3px;
+  font-size: 12.5px;
+}
+
+li strong,
+p strong {
+  color: #292333;
+}
+
+/* CONTACT PANEL */
+
+.contact-panel {
+  display: grid;
+  gap: 5px;
+  margin-top: 15px;
+  padding: 17px;
+  border-radius: 10px;
+  background: #FAF8FD;
+  color: #625C6D;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.contact-panel strong {
+  color: var(--ink);
+}
+
+/* FOOTER */
+
+.policy-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 24px;
+  margin-top: 30px;
+  border-top: 1px solid var(--line);
+  color: #8B8495;
+  font-size: 10px;
+}
+
+/* TABLET AND MOBILE */
+
+@media (max-width: 760px) {
+
+  .site-header {
+    height: 64px;
+    padding: 0 18px;
+  }
+
+  .page-shell {
+    padding: 38px 15px 55px;
+  }
+
+  .content-layout {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .side-card {
+    position: static;
+    padding: 13px;
+  }
+
+  .side-card nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    padding-bottom: 3px;
+  }
+
+  .side-card nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .side-title {
+    margin-bottom: 8px;
+  }
+
+  .policy-card {
+    padding: 22px 19px;
+  }
+
+  .header-label {
+    font-size: 10px;
+  }
+}
+
+/* PRINT */
+
+@media print {
+
+  body {
+    background: white;
+  }
+
+  .site-header,
+  .side-card {
+    display: none;
+  }
+
+  .page-shell {
+    max-width: none;
+    padding: 0;
+  }
+
+  .content-layout {
+    display: block;
+  }
+
+  .policy-card {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .notice {
+    display: none;
+  }
+}
+
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
